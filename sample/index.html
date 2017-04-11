@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>InputRounding jQuery plugin</title>
+
+    <meta name="description" content="InputRounding - jQuery plugin for round values in your inputs.">
+    <meta name="author" content="Bartosz Lampart">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link href="fonts/glyphicons-halflings-regular.eot" rel="stylesheet">
+    <link href="fonts/glyphicons-halflings-regular.svg" rel="stylesheet">
+    <link href="fonts/glyphicons-halflings-regular.ttf" rel="stylesheet">
+    <link href="fonts/glyphicons-halflings-regular.woff" rel="stylesheet">
+    <link href="fonts/glyphicons-halflings-regular.woff2" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../src/inputrounding.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h3>Input Rounding</h3>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <input type="number" id="txtFirstSample" />
+            </div>
+            <div class="col-md-8">
+                <p>Basic sample of input rounding</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#txtFirstSample").inputrounding();
+        });
+    </script>
+</body>
+
+</html>
