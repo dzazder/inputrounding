@@ -36,11 +36,23 @@
                 <p>Basic sample of input rounding</p>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-4">
+                <input type="number" id="txtSecondSample" />
+            </div>
+            <div class="col-md-8">
+                <span>You can set decimal places here:</span>
+            </div>
+        </div>
     </div>
 
     <script>
         $(document).ready(function() {
             $("#txtFirstSample").inputrounding();
+
+            $("#txtSecondSample").inputrounding({
+                decimalPlaces: 4
+            });
         });
     </script>
 </body>
